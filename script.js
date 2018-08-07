@@ -51,6 +51,7 @@ function doFrame4() {
 function start() {
   document.querySelector('main').style.display = 'block';
   document.querySelector('button').style.display = 'none';
+
   setTimeout(function () {
     doFrame1();
   }, 2000);

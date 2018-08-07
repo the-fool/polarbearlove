@@ -34,7 +34,7 @@
 
 <body>
   <div id="click">
-    <button type="button" onclick="start()">SMOOSH</button>
+    <button type="button" onclick="start()" ontouchstart="start()">SMOOSH</button>
   </div>
 
   <main>
@@ -71,6 +71,10 @@
     </audio>
   </main>
 
+  <script>
+  var el = document.querySelector("button");
+  //el.addEventListener("touchstart", start, false);
+  </script>
   <script src="script.js">
   </script>
 </body>
