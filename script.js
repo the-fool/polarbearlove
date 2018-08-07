@@ -34,7 +34,7 @@ function doFrame3() {
     f3.querySelector('p').style.opacity = 1;
   }, 500);
 
-  setTimeout(function() {
+  setTimeout(function () {
     doFrame4();
   }, 6000);
 }
@@ -43,15 +43,20 @@ function doFrame4() {
   f3.style.display = 'none';
   f4.style.display = 'block';
 
-  setTimeout(function() {
+  setTimeout(function () {
     f4.querySelector('p').style.opacity = 1;
   }, 500);
 }
 
-setTimeout(function () {
-  doFrame1();
-}, 2000);
+function start() {
+  document.querySelector('main').style.display = 'block';
+  document.querySelector('button').style.display = 'none';
+  setTimeout(function () {
+    doFrame1();
+  }, 2000);
 
-setTimeout(function() {
-  document.querySelector('audio').play();
-}, 4000);
+  setTimeout(function () {
+    document.querySelector('audio').play();
+  }, 1000);
+
+}

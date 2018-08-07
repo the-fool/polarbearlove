@@ -12,10 +12,31 @@
     p {
       opacity: 0;
     }
+
+    main {
+      display: none;
+    }
+
+    button {
+      margin-top: 20vh;
+      background-color: #088cac;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
   </style>
 </head>
 
 <body>
+  <div id="click">
+    <button type="button" onclick="start()">SMOOSH</button>
+  </div>
+
   <main>
     <div id="frame-1">
       <img src="lost.jpg">
@@ -45,13 +66,13 @@
         But it's going to turn out ok. And I'm here for you.
       </p>
     </div>
+    <audio controls>
+      <source src="indigo.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
   </main>
 
   <script src="script.js">
   </script>
-  <audio autoplay="autoplay" controls>
-    <source src="indigo.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-  </audio>
 </body>
 
 </html>
