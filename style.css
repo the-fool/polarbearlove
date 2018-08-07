@@ -1,0 +1,85 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: auto;
+  position: relative;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 27px;
+  color: #222;
+  max-width: 800px;
+}
+
+@media all and (min-width: 699px) {
+  body {
+    font-size: 40px;
+  }
+}
+main>div {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+p {
+  opacity: 0;
+  transition: all 1s;
+}
+
+#frame-2, #frame-3, #frame-4 {
+  display: none;
+}
+
+#frame-2 p {
+  position: absolute;
+  text-align: start;
+  top: 15%;
+  left: 10%;
+}
+
+#frame-3 p {
+  position: absolute;
+  text-align: start;
+  top: 10%;
+  left: 10%;
+}
+
+
+#frame-4 p {
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 10%;
+}
+
+#frame-1 p {
+  text-align: end;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  right: 5%;
+}
