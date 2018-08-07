@@ -51,3 +51,7 @@ function doFrame4() {
 setTimeout(function () {
   doFrame1();
 }, 2000);
+
+setTimeout(function() {
+  document.querySelector('audio').play();
+}, 4000);
